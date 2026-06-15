@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "gitFixr",
+  "version": "1.0.0",
+  "description": "Autonomous GitHub issue repair — right from your browser.",
+
+  "permissions": ["activeTab", "storage", "scripting"],
+  "host_permissions": ["https://github.com/*", "http://localhost:8001/*"],
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*/issues/*"],
+      "js": ["content_script.js"],
+      "run_at": "document_end"
+    }
+  ],
+
+  "action": {
+    "default_popup": "sidebar.html",
+    "default_title": "gitFixr"
+  }
+}
