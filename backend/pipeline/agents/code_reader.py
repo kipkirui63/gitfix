@@ -7,7 +7,7 @@ from pipeline.state import AgentState
 
 _client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
 
-/////////////////////////
+
 async def code_reader(state: AgentState) -> dict:
     """
     Agent 1 — Code Reader
