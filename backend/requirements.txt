@@ -1,0 +1,15 @@
+# TODO: fill in pinned versions once confirmed working
+fastapi
+uvicorn[standard]
+python-dotenv
+groq
+google-genai
+langgraph
+langchain-core
+e2b
+PyGithub
+chromadb
+sentence-transformers
+sqlalchemy
+httpx
+unidiff
